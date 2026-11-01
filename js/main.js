@@ -115,6 +115,38 @@ function drawBar() {
   el.subnavBar.style.transform = `translate3d(${barX.value.toFixed(2)}px,0,0) scaleX(${Math.max(0, barW.value).toFixed(2)})`;
 }
 
+/**
+ * 量出某个标签相对于"滑块所在坐标系"的横向位置和宽度。
+ * 沿着 offsetParent 链往上累加，直到滑块自己的定位祖先为止，
+ * 这样无论 li / a 有没有 position: relative 都不会错，
+ * 也不受入场动画 transform 的影响。
+ */
+function tabBox(tab) {
+  const container = el.subnavBar.offsetParent;
+  let x = 0;
+  for (let n = tab; n && n !== container; n = n.offsetParent) x += n.offsetLeft;
+  return { x, w: tab.offsetWidth };
+}
+
+/** 把滑块移到当前选中的标签下。grow: 切换一级分区时从 0 宽度长出来；instant: 不做动画直接就位。 */
+function placeBar({ grow = false, instant = false } = {}) {
+  const active = el.subnavList.querySelector('a[aria-current="page"]');
+  if (!active || el.subnav.hidden) return;
+  const { x, w } = tabBox(active);
+  if (instant || prefersReducedMotion()) {
+    barX.set(x);
+    barW.set(w);
+  } else if (grow) {
+    barX.set(x);
+    barW.set(0);
+    barW.to(w);
+  } else {
+    barX.to(x);
+    barW.to(w);
+  }
+  drawBar();
+}
+
 function renderSubnav(route, sectionChanged) {
   const section = SECTIONS.find((s) => s.id === route.section);
   const single = section.subs.length < 2;
@@ -132,28 +164,12 @@ function renderSubnav(route, sectionChanged) {
       ),
     );
   }
-  let active = null;
   el.subnavList.querySelectorAll('a').forEach((a) => {
-    const on = a.dataset.sub === route.sub;
-    if (on) {
-      a.setAttribute('aria-current', 'page');
-      active = a;
-    } else a.removeAttribute('aria-current');
+    if (a.dataset.sub === route.sub) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
   });
-  // Move the underline (wait one frame so new tabs are laid out).
-  requestAnimationFrame(() => {
-    if (!active) return;
-    const x = active.offsetLeft;
-    const w = active.offsetWidth;
-    if (sectionChanged || prefersReducedMotion()) {
-      barX.set(x);
-      barW.set(0);
-      barW.to(w);
-    } else {
-      barX.to(x);
-      barW.to(w);
-    }
-  });
+  // 等一帧，让新生成的标签完成布局后再测量。
+  requestAnimationFrame(() => placeBar({ grow: sectionChanged }));
 }
 
 /* ------------------------------------------------------------------ *
@@ -516,6 +532,9 @@ async function boot() {
   document.documentElement.dataset.titleMode = state.settings.titleMode;
   if (state.settings.deviceTilt) enableDeviceTilt();
 
+  // 字体加载完成、窗口大小变化后，重新对齐滑块（不播放动画）
+  document.fonts?.ready.then(() => placeBar({ instant: true }));
+  addEventListener('resize', () => placeBar({ instant: true }));
   playIntro();
   onRouteChange((route) => showRoute(route));
   showRoute(current(), { initial: true });
