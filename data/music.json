@@ -1,0 +1,67 @@
+[
+  {
+    "id": "music-0005",
+    "title": "A Flower Bookmark",
+    "originalTitle": "꽃갈피",
+    "originalLanguage": "ko",
+    "creator": "IU",
+    "creatorOriginal": "아이유",
+    "year": 2014,
+    "date": "2026-10-25",
+    "rating": 3.5,
+    "review": "翻唱专辑，《나의 옛날이야기》很好听。",
+    "tags": ["k-pop", "covers"],
+    "cover": ""
+  },
+  {
+    "id": "music-0004",
+    "title": "Weathering With You",
+    "originalTitle": "天気の子",
+    "originalLanguage": "ja",
+    "altTitles": ["天气之子"],
+    "creator": "RADWIMPS",
+    "year": 2019,
+    "date": "2026-09-03",
+    "rating": 4,
+    "review": "《グランドエスケープ》一响起就回到电影院。",
+    "tags": ["soundtrack", "j-rock"],
+    "cover": ""
+  },
+  {
+    "id": "music-0003",
+    "title": "Blonde",
+    "creator": "Frank Ocean",
+    "year": 2016,
+    "date": "2026-07-27",
+    "rating": 4.5,
+    "review": "Nights splits the album in half, and my summer too.",
+    "tags": ["r&b", "alternative"],
+    "cover": ""
+  },
+  {
+    "id": "music-0002",
+    "title": "Fantasy",
+    "originalTitle": "范特西",
+    "originalLanguage": "zh-Hant",
+    "creator": "Jay Chou",
+    "creatorOriginal": "周杰倫",
+    "year": 2001,
+    "date": "2026-05-05",
+    "rating": 4.5,
+    "review": "《简单爱》《双截棍》《爱在西元前》，一张专辑就是一个时代。",
+    "tags": ["mandopop"],
+    "cover": ""
+  },
+  {
+    "id": "music-0001",
+    "title": "OK Computer",
+    "originalTitle": "OK Computer",
+    "creator": "Radiohead",
+    "year": 1997,
+    "date": "2026-02-01",
+    "rating": 5,
+    "review": "Fitter, happier, more productive.",
+    "tags": ["alternative", "rock"],
+    "cover": ""
+  }
+]

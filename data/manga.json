@@ -1,0 +1,58 @@
+[
+  {
+    "id": "manga-0004",
+    "title": "Yotsuba&!",
+    "originalTitle": "よつばと！",
+    "originalLanguage": "ja",
+    "altTitles": ["四叶妹妹！"],
+    "creator": "Kiyohiko Azuma",
+    "creatorOriginal": "あずまきよひこ",
+    "year": 2003,
+    "date": "2026-10-02",
+    "rating": 4.5,
+    "review": "每一话都是好天气。",
+    "tags": ["comedy", "slice of life"],
+    "cover": ""
+  },
+  {
+    "id": "manga-0003",
+    "title": "Solo Leveling",
+    "originalTitle": "나 혼자만 레벨업",
+    "originalLanguage": "ko",
+    "altTitles": ["我独自升级"],
+    "creator": "Chugong",
+    "creatorOriginal": "추공",
+    "year": 2018,
+    "date": "2026-07-19",
+    "rating": 3,
+    "review": "爽是真的爽，作画很强，剧情一般。",
+    "tags": ["action", "webtoon"],
+    "cover": ""
+  },
+  {
+    "id": "manga-0002",
+    "title": "Watchmen",
+    "creator": "Alan Moore",
+    "year": 1986,
+    "date": "2026-04-22",
+    "rating": 4,
+    "review": "Who watches the watchmen? 九宫格分镜读起来像钟表。",
+    "tags": ["superhero", "graphic novel"],
+    "cover": ""
+  },
+  {
+    "id": "manga-0001",
+    "title": "Vagabond",
+    "originalTitle": "バガボンド",
+    "originalLanguage": "ja",
+    "altTitles": ["浪客行"],
+    "creator": "Takehiko Inoue",
+    "creatorOriginal": "井上雄彦",
+    "year": 1998,
+    "date": "2026-02-14",
+    "rating": 5,
+    "review": "水墨画一样的分镜。还在等它完结。",
+    "tags": ["samurai", "historical", "seinen"],
+    "cover": ""
+  }
+]
