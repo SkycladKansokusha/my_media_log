@@ -1,71 +1,48 @@
 [
   {
-    "id": "literature-0005",
-    "title": "Human Acts",
-    "originalTitle": "소년이 온다",
-    "originalLanguage": "ko",
-    "altTitles": ["少年来了"],
-    "creator": "Han Kang",
-    "creatorOriginal": "한강",
-    "year": 2014,
-    "date": "2026-10-30",
-    "rating": 4.5,
-    "review": "读得很慢，每一章都需要停下来。",
-    "tags": ["history", "korea"],
-    "cover": ""
-  },
-  {
-    "id": "literature-0004",
-    "title": "The Three-Body Problem",
-    "originalTitle": "三体",
-    "originalLanguage": "zh",
-    "creator": "Liu Cixin",
-    "creatorOriginal": "刘慈欣",
-    "year": 2008,
-    "date": "2026-08-18",
-    "rating": 4,
-    "review": "第一部的悬疑感最好。黑暗森林法则至今想起来还会发冷。",
-    "tags": ["sci-fi"],
-    "cover": ""
-  },
-  {
-    "id": "literature-0003",
-    "title": "The Remains of the Day",
-    "creator": "Kazuo Ishiguro",
-    "year": 1989,
-    "date": "2026-06-11",
-    "rating": 5,
-    "review": "A perfect unreliable narrator. 最后码头那一段太难过了。",
-    "tags": ["literary fiction", "england"],
-    "cover": ""
-  },
-  {
     "id": "literature-0002",
-    "title": "Norwegian Wood",
-    "originalTitle": "ノルウェイの森",
+    "title": "No Longer Human",
+    "originalTitle": "人間失格",
     "originalLanguage": "ja",
-    "altTitles": ["挪威的森林"],
-    "creator": "Haruki Murakami",
-    "creatorOriginal": "村上春樹",
-    "year": 1987,
-    "date": "2026-03-09",
+    "altTitles": [
+      "Ningen Shikkaku"
+    ],
+    "creator": "Osamu Dazai",
+    "creatorOriginal": "太宰 治",
+    "year": 1948,
+    "date": "2026-11-01",
     "rating": 4,
-    "review": "二十岁读和现在读完全是两本书。",
-    "tags": ["literary fiction", "coming of age"],
-    "cover": ""
+    "review": "恥の多い生涯を送って来ました。",
+    "tags": [
+      "Japanese Literature"
+    ],
+    "cover": "covers/literature-0002.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL3923952W"
+    }
   },
   {
     "id": "literature-0001",
-    "title": "To Live",
-    "originalTitle": "活着",
-    "originalLanguage": "zh",
-    "creator": "Yu Hua",
-    "creatorOriginal": "余华",
-    "year": 1993,
-    "date": "2026-01-12",
-    "rating": 4.5,
-    "review": "平静地讲最残酷的事。",
-    "tags": ["literary fiction", "china"],
-    "cover": ""
+    "title": "Norwegian Wood",
+    "originalTitle": "ノルウェイの森",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "상실의 시대"
+    ],
+    "creator": "Haruki Murakami",
+    "creatorOriginal": "村上春樹",
+    "year": 1987,
+    "date": "2026-11-01",
+    "rating": 5,
+    "review": "これは喪失の時代である。",
+    "tags": [
+      "Romance"
+    ],
+    "cover": "covers/literature-0001.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL2625457W"
+    }
   }
 ]

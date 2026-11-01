@@ -1,5 +1,74 @@
 [
   {
+    "id": "anime-0008",
+    "title": "JoJo's Bizarre Adventure: Golden Wind",
+    "originalTitle": "ジョジョの奇妙な冒険 黄金の風",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "JoJo no Kimyou na Bouken: Ougon no Kaze"
+    ],
+    "creator": "Hideya Takahashi",
+    "creatorOriginal": "高橋秀弥",
+    "year": 2018,
+    "date": "2026-11-01",
+    "rating": 5,
+    "tags": [
+      "Fantasy",
+      "Superpowers"
+    ],
+    "cover": "covers/anime-0008.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "102883"
+    }
+  },
+  {
+    "id": "anime-0007",
+    "title": "JoJo's Bizarre Adventure: Diamond is Unbreakable",
+    "originalTitle": "ジョジョの奇妙な冒険 ダイヤモンドは砕けない",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "JoJo no Kimyou na Bouken: Diamond wa Kudakenai"
+    ],
+    "creator": "Naokatsu Tsuda",
+    "creatorOriginal": "津田尚克",
+    "year": 2016,
+    "date": "2026-11-01",
+    "rating": 4.5,
+    "tags": [
+      "Fantasy",
+      "Superpowers"
+    ],
+    "cover": "covers/anime-0007.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "21450"
+    }
+  },
+  {
+    "id": "anime-0006",
+    "title": "Frieren: Beyond Journey’s End",
+    "originalTitle": "葬送のフリーレン",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "Sousou no Frieren"
+    ],
+    "creator": "Keiichirou Saitou",
+    "creatorOriginal": "斎藤圭一郎",
+    "year": 2023,
+    "date": "2026-11-01",
+    "rating": 5,
+    "review": "涙の別れなんて、僕達には似合わない。だってまた会った時、恥ずかしいからね。",
+    "tags": [
+      "Fantasy"
+    ],
+    "cover": "covers/anime-0006.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "154587"
+    }
+  },
+  {
     "id": "anime-0005",
     "title": "Attack On Titan",
     "originalTitle": "進撃の巨人",
@@ -20,85 +89,5 @@
       "provider": "anilist",
       "id": "16498"
     }
-  },
-  {
-    "id": "anime-0004",
-    "title": "Frieren: Beyond Journey's End",
-    "originalTitle": "葬送のフリーレン",
-    "originalLanguage": "ja",
-    "altTitles": [
-      "葬送的芙莉莲"
-    ],
-    "creator": "Keiichiro Saito",
-    "creatorOriginal": "斎藤圭一郎",
-    "year": 2023,
-    "date": "2026-10-20",
-    "rating": 4.5,
-    "review": "关于时间与记忆的故事。\n“人类的寿命很短”这句话后劲太大。",
-    "tags": [
-      "fantasy",
-      "adventure",
-      "melancholy"
-    ],
-    "source": {
-      "provider": "anilist",
-      "id": "154587"
-    }
-  },
-  {
-    "id": "anime-0003",
-    "title": "Link Click",
-    "originalTitle": "时光代理人",
-    "originalLanguage": "zh",
-    "creator": "Li Haoling",
-    "creatorOriginal": "李豪凌",
-    "year": 2021,
-    "date": "2026-06-30",
-    "rating": 4,
-    "review": "国创里节奏感最好的作品之一，OP 很燃。",
-    "tags": [
-      "mystery",
-      "time travel",
-      "donghua"
-    ]
-  },
-  {
-    "id": "anime-0002",
-    "title": "Mushishi",
-    "originalTitle": "蟲師",
-    "originalLanguage": "ja",
-    "altTitles": [
-      "虫师"
-    ],
-    "creator": "Hiroshi Nagahama",
-    "creatorOriginal": "長濱博史",
-    "year": 2005,
-    "date": "2026-04-03",
-    "rating": 5,
-    "review": "像在山里慢慢走了一遍。安静、潮湿、温柔。",
-    "tags": [
-      "iyashikei",
-      "supernatural"
-    ]
-  },
-  {
-    "id": "anime-0001",
-    "title": "Neon Genesis Evangelion",
-    "originalTitle": "新世紀エヴァンゲリオン",
-    "originalLanguage": "ja",
-    "altTitles": [
-      "新世纪福音战士",
-      "EVA"
-    ],
-    "creator": "Hideaki Anno",
-    "creatorOriginal": "庵野秀明",
-    "year": 1995,
-    "date": "2026-01-05",
-    "rating": 4.5,
-    "review": "第一次看完最后两集完全没看懂，第二次看完不想说话。",
-    "tags": [
-      "mecha",
-      "psychological"
-    ]
   }
 ]
