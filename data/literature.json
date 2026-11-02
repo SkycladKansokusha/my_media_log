@@ -10,7 +10,8 @@
     "date": "2026-11-02",
     "rating": 5,
     "tags": [
-      "Tragedy"
+      "Tragedy",
+      "Chinese Literature"
     ],
     "cover": "covers/literature/literature-0004.jpg",
     "source": {
@@ -29,7 +30,8 @@
     "date": "2026-11-02",
     "rating": 5,
     "tags": [
-      "Tragedy"
+      "Tragedy",
+      "Chinese Literature"
     ],
     "cover": "covers/literature/literature-0003.jpg",
     "source": {
@@ -75,7 +77,8 @@
     "rating": 5,
     "review": "これは喪失の時代である。",
     "tags": [
-      "Romance"
+      "Romance",
+      "Japanese Literature"
     ],
     "cover": "covers/literature/literature-0001.jpg",
     "source": {
