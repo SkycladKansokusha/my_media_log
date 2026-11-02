@@ -1,5 +1,28 @@
 [
   {
+    "id": "manga-0011",
+    "title": "Attack on Titan",
+    "originalTitle": "進撃の巨人",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "Shingeki no Kyojin"
+    ],
+    "creator": "Hajime Isayama",
+    "creatorOriginal": "諫山創",
+    "year": 2009,
+    "date": "2026-11-02",
+    "rating": 5,
+    "review": "Masterpiece.",
+    "tags": [
+      "Fiction"
+    ],
+    "cover": "covers/manga/manga-0011.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "53390"
+    }
+  },
+  {
     "id": "manga-0010",
     "title": "Summertime Rendering",
     "originalTitle": "サマータイムレンダ",
