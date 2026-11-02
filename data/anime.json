@@ -1,5 +1,131 @@
 [
   {
+    "id": "anime-0014",
+    "title": "Vinland Saga",
+    "originalTitle": "ヴィンランド・サガ",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "VINLAND SAGA"
+    ],
+    "creator": "Shuuhei Yabuta",
+    "creatorOriginal": "籔田修平",
+    "year": 2019,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Historical"
+    ],
+    "cover": "covers/anime-0014.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "101348"
+    }
+  },
+  {
+    "id": "anime-0013",
+    "title": "A Certain Scientific Railgun",
+    "originalTitle": "とある科学の超電磁砲",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "Toaru Kagaku no Railgun"
+    ],
+    "creator": "Tatsuyuki Nagai",
+    "creatorOriginal": "長井龍雪",
+    "year": 2009,
+    "date": "2026-11-02",
+    "rating": 4.5,
+    "tags": [
+      "Fiction"
+    ],
+    "cover": "covers/anime-0013.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "6213"
+    }
+  },
+  {
+    "id": "anime-0012",
+    "title": "Tamako Market",
+    "originalTitle": "たまこまーけっと",
+    "originalLanguage": "ja",
+    "creator": "Naoko Yamada",
+    "creatorOriginal": "山田尚子",
+    "year": 2013,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Comedy"
+    ],
+    "cover": "covers/anime-0012.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "16417"
+    }
+  },
+  {
+    "id": "anime-0011",
+    "title": "K-ON!",
+    "originalTitle": "けいおん!",
+    "originalLanguage": "ja",
+    "creator": "Naoko Yamada",
+    "creatorOriginal": "山田尚子",
+    "year": 2009,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Comedy"
+    ],
+    "cover": "covers/anime-0011.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "5680"
+    }
+  },
+  {
+    "id": "anime-0010",
+    "title": "The Tatami Galaxy",
+    "originalTitle": "四畳半神話大系",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "Yojouhan Shinwa Taikei"
+    ],
+    "creator": "Masaaki Yuasa",
+    "creatorOriginal": "湯浅政明",
+    "year": 2010,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Comedy"
+    ],
+    "cover": "covers/anime-0010.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "7785"
+    }
+  },
+  {
+    "id": "anime-0009",
+    "title": "Ping Pong the Animation",
+    "originalTitle": "ピンポン THE ANIMATION",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "Ping Pong THE ANIMATION"
+    ],
+    "creator": "Masaaki Yuasa",
+    "creatorOriginal": "湯浅政明",
+    "year": 2014,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Sports"
+    ],
+    "cover": "covers/anime-0009.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "20607"
+    }
+  },
+  {
     "id": "anime-0008",
     "title": "JoJo's Bizarre Adventure: Golden Wind",
     "originalTitle": "ジョジョの奇妙な冒険 黄金の風",

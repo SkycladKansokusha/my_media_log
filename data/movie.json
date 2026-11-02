@@ -1,5 +1,91 @@
 [
   {
+    "id": "movie-0007",
+    "title": "We Made a Beautiful Bouquet",
+    "originalTitle": "花束みたいな恋をした",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "花束般的恋爱"
+    ],
+    "creator": "Nobuhiro Doi",
+    "creatorOriginal": "土井裕泰",
+    "year": 2021,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Romance"
+    ],
+    "cover": "covers/movie-0007.jpg",
+    "source": {
+      "provider": "tmdb",
+      "id": "695932"
+    }
+  },
+  {
+    "id": "movie-0006",
+    "title": "Memories of Murder",
+    "originalTitle": "살인의 추억",
+    "originalLanguage": "ko",
+    "altTitles": [
+      "杀人回忆"
+    ],
+    "creator": "Bong Joon Ho",
+    "year": 2003,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Crime",
+      "Thriller"
+    ],
+    "cover": "covers/movie-0006.jpg",
+    "source": {
+      "provider": "tmdb",
+      "id": "11423"
+    }
+  },
+  {
+    "id": "movie-0005",
+    "title": "Good News",
+    "originalTitle": "굿뉴스",
+    "originalLanguage": "ko",
+    "altTitles": [
+      "凶降喜讯"
+    ],
+    "creator": "Byun Sung-hyun",
+    "year": 2025,
+    "date": "2026-11-02",
+    "rating": 4.5,
+    "tags": [
+      "Black Comedy"
+    ],
+    "cover": "covers/movie-0005.jpg",
+    "source": {
+      "provider": "tmdb",
+      "id": "1296404"
+    }
+  },
+  {
+    "id": "movie-0004",
+    "title": "Parasite",
+    "originalTitle": "기생충",
+    "originalLanguage": "ko",
+    "altTitles": [
+      "寄生虫"
+    ],
+    "creator": "Bong Joon Ho",
+    "year": 2019,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Black Comedy"
+    ],
+    "cover": "covers/movie-0004.jpg",
+    "source": {
+      "provider": "tmdb",
+      "id": "496243"
+    }
+  },
+  {
     "id": "movie-0003",
     "title": "Interstellar",
     "originalTitle": "Interstellar",
