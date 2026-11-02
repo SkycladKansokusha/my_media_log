@@ -1,5 +1,43 @@
 [
   {
+    "id": "literature-0004",
+    "title": "Frog",
+    "originalTitle": "蛙",
+    "originalLanguage": "zh",
+    "creator": "Mo Yan",
+    "creatorOriginal": "莫言",
+    "year": 2014,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Tragedy"
+    ],
+    "cover": "covers/literature/literature-0004.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL22313811W"
+    }
+  },
+  {
+    "id": "literature-0003",
+    "title": "To live",
+    "originalTitle": "活着",
+    "originalLanguage": "zh",
+    "creator": "Yu Hua",
+    "creatorOriginal": "余华",
+    "year": 2003,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Tragedy"
+    ],
+    "cover": "covers/literature/literature-0003.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL15861449W"
+    }
+  },
+  {
     "id": "literature-0002",
     "title": "No Longer Human",
     "originalTitle": "人間失格",
