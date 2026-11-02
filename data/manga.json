@@ -1,5 +1,27 @@
 [
   {
+    "id": "manga-0012",
+    "title": "The Climber",
+    "originalTitle": "孤高の人",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "Kokou no Hito"
+    ],
+    "creator": "Shinichi Sakamoto",
+    "creatorOriginal": "坂本眞一",
+    "year": 2007,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Seinen"
+    ],
+    "cover": "covers/manga/manga-0012.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "37375"
+    }
+  },
+  {
     "id": "manga-0011",
     "title": "Attack on Titan",
     "originalTitle": "進撃の巨人",
