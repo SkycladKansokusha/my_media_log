@@ -16,7 +16,7 @@
     "tags": [
       "Psychological"
     ],
-    "cover": "covers/manga-0007.jpg",
+    "cover": "covers/manga/manga-0007.jpg",
     "source": {
       "provider": "anilist",
       "id": "34632"
@@ -38,7 +38,7 @@
     "tags": [
       "Romance"
     ],
-    "cover": "covers/manga-0006.jpg",
+    "cover": "covers/manga/manga-0006.jpg",
     "source": {
       "provider": "anilist",
       "id": "86218"
@@ -59,7 +59,7 @@
       "Fantasy",
       "Dark"
     ],
-    "cover": "covers/manga-0005.jpg",
+    "cover": "covers/manga/manga-0005.jpg",
     "source": {
       "provider": "anilist",
       "id": "30002"

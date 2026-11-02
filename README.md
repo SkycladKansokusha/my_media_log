@@ -1,6 +1,6 @@
 # MEDIA LOG — 个人观影 / 阅读 / 听歌记录
 
-纯静态网站（HTML + CSS + 原生 JS 模块），数据存放在 `data/*.json`，封面存放在 `covers/`。
+纯静态网站（HTML + CSS + 原生 JS 模块），数据存放在 `data/*.json`，封面按分类存放在 `covers/<分类>/`。
 不需要构建步骤，也没有运行时依赖；可以直接部署到 GitHub Pages。
 网站：<https://skycladkansokusha.github.io/my_media_log>
 
@@ -23,7 +23,7 @@ my-media-log/
 │   ├── tilt.js             3D 视差倾斜（可复用模块）
 │   └── main.js             入口：把以上模块连起来
 ├── data/                   movie / tv / anime / manga / literature / music .json + settings.json
-├── covers/                 封面图片（随仓库提交）
+├── covers/                 封面图片（随仓库提交），按分类分子文件夹：movie/ tv/ anime/ manga/ literature/ music/
 ├── scripts/
 │   ├── add.py              交互式录入 + 封面抓取
 │   ├── validate.py         数据校验
@@ -140,7 +140,7 @@ export TMDB_API_KEY=你的key
   "rating": 4.5,
   "review": "评价文字，\n支持换行",
   "tags": ["animation", "fantasy"],
-  "cover": "covers/movie-0001.jpg",
+  "cover": "covers/movie/movie-0001.jpg",
   "source": { "provider": "tmdb", "id": "129" }
 }
 ```
@@ -157,7 +157,11 @@ export TMDB_API_KEY=你的key
 | `date` | ✓ | 记录日期 `YYYY-MM-DD`，页面显示为 `20 OCT 2026` |
 | `rating` | ✓ | 1–5，0.5 的倍数 |
 | `review` / `tags` | | 你写的内容，原样显示，中英文都可以 |
-| `cover` | | 本地路径 `covers/xxx.jpg`；留空显示占位封面 |
+| `cover` | | 本地路径 `covers/<分类>/xxx.jpg`；留空显示占位封面 |
+
+### 手动换封面
+
+把图片放进 `covers/<分类>/`（例如 `covers/anime/anime-0014.jpg`），再把条目的 `cover` 改成这个路径。`add.py` 下载的封面会自动保存到对应分类的子文件夹。放错文件夹时 `validate.py` 会给出警告。
 
 ### 标题显示模式 `data/settings.json`
 
@@ -177,7 +181,7 @@ python3 scripts/validate.py
 ```
 
 检查：必填字段、类型、评分是否 0.5 倍数且在 1–5、日期格式、封面文件是否存在、id 重复、`altTitles`/`tags` 是否字符串数组、语言代码格式、`settings.json`。
-`title` 含中日韩字符时给出**警告**（提醒补英文译名），不算错误。有错误时退出码为 1（GitHub Actions 部署会因此中止）。
+`title` 含中日韩字符（提醒补英文译名）、封面不在 `covers/<分类>/` 下、`covers/` 里有未被引用的图片时给出**警告**，不算错误。有错误时退出码为 1（GitHub Actions 部署会因此中止）。
 
 ---
 

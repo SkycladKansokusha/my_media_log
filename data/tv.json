@@ -15,7 +15,7 @@
     "tags": [
       "Japan"
     ],
-    "cover": "covers/tv-0007.jpg",
+    "cover": "covers/tv/tv-0007.jpg",
     "source": {
       "provider": "tmdb",
       "id": "46234"
@@ -37,7 +37,7 @@
     "tags": [
       "Japan"
     ],
-    "cover": "covers/tv-0006.jpg",
+    "cover": "covers/tv/tv-0006.jpg",
     "source": {
       "provider": "tmdb",
       "id": "55925"
@@ -59,7 +59,7 @@
     "tags": [
       "Japan"
     ],
-    "cover": "covers/tv-0005.jpg",
+    "cover": "covers/tv/tv-0005.jpg",
     "source": {
       "provider": "tmdb",
       "id": "38242"
@@ -82,7 +82,7 @@
       "Japan",
       "Romance"
     ],
-    "cover": "covers/tv-0004.jpg",
+    "cover": "covers/tv/tv-0004.jpg",
     "source": {
       "provider": "tmdb",
       "id": "16069"
@@ -106,7 +106,7 @@
       "Japan",
       "Romance"
     ],
-    "cover": "covers/tv-0003.jpg",
+    "cover": "covers/tv/tv-0003.jpg",
     "source": {
       "provider": "tmdb",
       "id": "69857"
@@ -127,7 +127,7 @@
     "tags": [
       "Horror"
     ],
-    "cover": "covers/tv-0002.jpg",
+    "cover": "covers/tv/tv-0002.jpg",
     "source": {
       "provider": "tmdb",
       "id": "1402"
@@ -147,7 +147,7 @@
     "tags": [
       "Japan"
     ],
-    "cover": "covers/tv-0001.jpg",
+    "cover": "covers/tv/tv-0001.jpg",
     "source": {
       "provider": "tmdb",
       "id": "75701"

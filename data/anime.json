@@ -15,7 +15,7 @@
     "tags": [
       "Historical"
     ],
-    "cover": "covers/anime-0014.jpg",
+    "cover": "covers/anime/anime-0014.jpg",
     "source": {
       "provider": "anilist",
       "id": "101348"
@@ -37,7 +37,7 @@
     "tags": [
       "Fiction"
     ],
-    "cover": "covers/anime-0013.jpg",
+    "cover": "covers/anime/anime-0013.jpg",
     "source": {
       "provider": "anilist",
       "id": "6213"
@@ -56,7 +56,7 @@
     "tags": [
       "Comedy"
     ],
-    "cover": "covers/anime-0012.jpg",
+    "cover": "covers/anime/anime-0012.jpg",
     "source": {
       "provider": "anilist",
       "id": "16417"
@@ -75,7 +75,7 @@
     "tags": [
       "Comedy"
     ],
-    "cover": "covers/anime-0011.jpg",
+    "cover": "covers/anime/anime-0011.jpg",
     "source": {
       "provider": "anilist",
       "id": "5680"
@@ -97,7 +97,7 @@
     "tags": [
       "Comedy"
     ],
-    "cover": "covers/anime-0010.jpg",
+    "cover": "covers/anime/anime-0010.jpg",
     "source": {
       "provider": "anilist",
       "id": "7785"
@@ -119,7 +119,7 @@
     "tags": [
       "Sports"
     ],
-    "cover": "covers/anime-0009.jpg",
+    "cover": "covers/anime/anime-0009.jpg",
     "source": {
       "provider": "anilist",
       "id": "20607"
@@ -142,7 +142,7 @@
       "Fantasy",
       "Superpowers"
     ],
-    "cover": "covers/anime-0008.jpg",
+    "cover": "covers/anime/anime-0008.jpg",
     "source": {
       "provider": "anilist",
       "id": "102883"
@@ -165,7 +165,7 @@
       "Fantasy",
       "Superpowers"
     ],
-    "cover": "covers/anime-0007.jpg",
+    "cover": "covers/anime/anime-0007.jpg",
     "source": {
       "provider": "anilist",
       "id": "21450"
@@ -188,7 +188,7 @@
     "tags": [
       "Fantasy"
     ],
-    "cover": "covers/anime-0006.jpg",
+    "cover": "covers/anime/anime-0006.jpg",
     "source": {
       "provider": "anilist",
       "id": "154587"
@@ -210,7 +210,7 @@
     "tags": [
       "Fantasy"
     ],
-    "cover": "covers/anime-0005.jpg",
+    "cover": "covers/anime/anime-0005.jpg",
     "source": {
       "provider": "anilist",
       "id": "16498"

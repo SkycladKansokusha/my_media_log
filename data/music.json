@@ -11,7 +11,7 @@
     "tags": [
       "Japanese"
     ],
-    "cover": "covers/music-0007.jpg",
+    "cover": "covers/music/music-0007.jpg",
     "source": {
       "provider": "itunes",
       "id": "358082162"
@@ -30,7 +30,7 @@
     "tags": [
       "Japanese"
     ],
-    "cover": "covers/music-0006.jpg",
+    "cover": "covers/music/music-0006.jpg",
     "source": {
       "provider": "itunes",
       "id": "1465208767"
@@ -49,7 +49,7 @@
     "tags": [
       "Japanese"
     ],
-    "cover": "covers/music-0005.jpg",
+    "cover": "covers/music/music-0005.jpg",
     "source": {
       "provider": "itunes",
       "id": "252312252"
@@ -68,7 +68,7 @@
     "tags": [
       "Japanese"
     ],
-    "cover": "covers/music-0004.jpg",
+    "cover": "covers/music/music-0004.jpg",
     "source": {
       "provider": "itunes",
       "id": "1358578519"
@@ -85,7 +85,7 @@
     "tags": [
       "Movie soundtrack"
     ],
-    "cover": "covers/music-0003.jpg",
+    "cover": "covers/music/music-0003.jpg",
     "source": {
       "provider": "itunes",
       "id": "1453876765"
@@ -102,7 +102,7 @@
     "tags": [
       "Rock"
     ],
-    "cover": "covers/music-0002.jpg",
+    "cover": "covers/music/music-0002.jpg",
     "source": {
       "provider": "itunes",
       "id": "590431776"
@@ -119,7 +119,7 @@
     "tags": [
       "Rock"
     ],
-    "cover": "covers/music-0001.jpg",
+    "cover": "covers/music/music-0001.jpg",
     "source": {
       "provider": "itunes",
       "id": "528435845"

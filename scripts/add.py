@@ -29,7 +29,7 @@ import sys
 from pathlib import Path
 
 from common import (
-    CATEGORIES, COVERS_DIR, DATE_RE, LANG_RE, ROOT, Colors, guess_lang, has_cjk,
+    CATEGORIES, DATE_RE, LANG_RE, ROOT, Colors, cover_dir, guess_lang, has_cjk,
     is_valid_rating, load_entries, save_entries, setup_console,
 )
 
@@ -458,21 +458,26 @@ def details(category: str, item: dict) -> dict:
 # Covers
 # ====================================================================
 
+def entry_cover_dir(entry_id: str) -> Path:
+    """covers/<category>/ for an id like "anime-0014" (ids are always <category>-NNNN)."""
+    return cover_dir(entry_id.rsplit("-", 1)[0])
+
+
 def save_cover_bytes(data: bytes, entry_id: str, content_type: str = "") -> str:
-    """Save image bytes as covers/<id>.jpg (Pillow) or with its original extension (no Pillow)."""
-    COVERS_DIR.mkdir(exist_ok=True)
+    """Save image bytes as covers/<category>/<id>.jpg (Pillow) or with its original extension (no Pillow)."""
+    folder = entry_cover_dir(entry_id)
     if Image is not None:
         try:
             img = Image.open(io.BytesIO(data))
             img = img.convert("RGB")
             img.thumbnail((COVER_MAX_SIZE, COVER_MAX_SIZE))
-            path = COVERS_DIR / f"{entry_id}.jpg"
+            path = folder / f"{entry_id}.jpg"
             img.save(path, "JPEG", quality=88, optimize=True, progressive=True)
             return path.relative_to(ROOT).as_posix()
         except Exception as e:  # corrupt / unsupported image
             print(C.yellow(f"  Pillow could not convert the image ({e}); saving it unchanged."))
     ext = guess_ext(data, content_type)
-    path = COVERS_DIR / f"{entry_id}{ext}"
+    path = folder / f"{entry_id}{ext}"
     path.write_bytes(data)
     return path.relative_to(ROOT).as_posix()
 
@@ -517,8 +522,7 @@ def import_cover(src: str, entry_id: str) -> str:
         print(C.yellow(f"  File not found: {path}  (no cover saved)"))
         return ""
     if Image is None:
-        COVERS_DIR.mkdir(exist_ok=True)
-        target = COVERS_DIR / f"{entry_id}{path.suffix.lower() or '.jpg'}"
+        target = entry_cover_dir(entry_id) / f"{entry_id}{path.suffix.lower() or '.jpg'}"
         shutil.copyfile(path, target)
         return target.relative_to(ROOT).as_posix()
     return save_cover_bytes(path.read_bytes(), entry_id)

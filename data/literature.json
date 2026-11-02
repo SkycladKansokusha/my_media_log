@@ -16,7 +16,7 @@
     "tags": [
       "Japanese Literature"
     ],
-    "cover": "covers/literature-0002.jpg",
+    "cover": "covers/literature/literature-0002.jpg",
     "source": {
       "provider": "openlibrary",
       "id": "OL3923952W"
@@ -39,7 +39,7 @@
     "tags": [
       "Romance"
     ],
-    "cover": "covers/literature-0001.jpg",
+    "cover": "covers/literature/literature-0001.jpg",
     "source": {
       "provider": "openlibrary",
       "id": "OL2625457W"

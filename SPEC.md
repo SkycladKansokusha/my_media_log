@@ -10,7 +10,7 @@
 | 动画 | 弹簧、缓动、3D 倾斜全部自实现（`js/motion.js`、`js/tilt.js`） |
 | 字体 | 系统字体或 Google Fonts（当前：Inter / Rajdhani / JetBrains Mono） |
 | 数据 | `data/*.json`，前端 `fetch` 读取（`cache: 'no-cache'`） |
-| 封面 | 下载到 `covers/` 随仓库提交；前端不请求任何外部 API、不暴露 Key |
+| 封面 | 下载到 `covers/<分类>/` 随仓库提交；前端不请求任何外部 API、不暴露 Key |
 | 部署 | GitHub Pages，仓库根目录发布；可选 Actions 工作流 `.github/workflows/pages.yml` |
 | 本地预览 | `python -m http.server` |
 | 脚本依赖 | `requests`（必需）、`pillow`（可选，缺失时封面原样保存） |
@@ -49,7 +49,7 @@
 `rating` ∈ {1, 1.5, …, 5}。`settings.json`：`titleMode`、`deviceTilt`。
 
 `validate.py` 错误：缺必填、类型错误、评分非法、日期非法、封面不存在或为 URL、id 重复、`altTitles`/`tags` 非字符串数组、语言代码格式非法、settings 非法。
-警告：`title` 含 CJK、有原名无语言代码、未知字段、未被引用的封面、id 前缀与分类不符、未来日期。
+警告：`title` 含 CJK、有原名无语言代码、未知字段、未被引用的封面（递归扫描子文件夹）、封面不在 `covers/<分类>/` 下、id 前缀与分类不符、未来日期。
 
 ## 5. 视觉
 

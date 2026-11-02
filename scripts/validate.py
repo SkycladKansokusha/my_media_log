@@ -119,6 +119,8 @@ def check_entry(entry, where: str, category: str, seen_ids: dict, used_covers: s
             r.error(where, "cover must be a local path (covers/…), not a URL — "
                            "the site never loads images from external servers")
         else:
+            if not cover.startswith(f"covers/{category}/"):
+                r.warn(where, f'cover "{cover}" is not in covers/{category}/')
             path = (ROOT / cover).resolve()
             if not path.is_file():
                 r.error(where, f'cover file not found: "{cover}"')
@@ -181,9 +183,9 @@ def main() -> int:
 
     # Cover files nobody references (harmless, but wasted repo space).
     if COVERS_DIR.exists():
-        for f in sorted(COVERS_DIR.iterdir()):
+        for f in sorted(COVERS_DIR.rglob("*")):  # recursive: covers/<category>/ and loose files in covers/
             if f.is_file() and not f.name.startswith(".") and f.resolve() not in used_covers:
-                r.warn("covers/", f'"{f.name}" is not used by any entry')
+                r.warn("covers/", f'"{f.relative_to(COVERS_DIR).as_posix()}" is not used by any entry')
 
     for w in r.warnings:
         print(Colors.yellow("WARN  ") + w)

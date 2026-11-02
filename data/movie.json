@@ -15,7 +15,7 @@
     "tags": [
       "Romance"
     ],
-    "cover": "covers/movie-0007.jpg",
+    "cover": "covers/movie/movie-0007.jpg",
     "source": {
       "provider": "tmdb",
       "id": "695932"
@@ -37,7 +37,7 @@
       "Crime",
       "Thriller"
     ],
-    "cover": "covers/movie-0006.jpg",
+    "cover": "covers/movie/movie-0006.jpg",
     "source": {
       "provider": "tmdb",
       "id": "11423"
@@ -58,7 +58,7 @@
     "tags": [
       "Black Comedy"
     ],
-    "cover": "covers/movie-0005.jpg",
+    "cover": "covers/movie/movie-0005.jpg",
     "source": {
       "provider": "tmdb",
       "id": "1296404"
@@ -79,7 +79,7 @@
     "tags": [
       "Black Comedy"
     ],
-    "cover": "covers/movie-0004.jpg",
+    "cover": "covers/movie/movie-0004.jpg",
     "source": {
       "provider": "tmdb",
       "id": "496243"
@@ -101,7 +101,7 @@
     "tags": [
       "Sci-fi"
     ],
-    "cover": "covers/movie-0003.jpg",
+    "cover": "covers/movie/movie-0003.jpg",
     "source": {
       "provider": "tmdb",
       "id": "157336"
@@ -122,7 +122,7 @@
     "tags": [
       "Psychological"
     ],
-    "cover": "covers/movie-0002.jpg",
+    "cover": "covers/movie/movie-0002.jpg",
     "source": {
       "provider": "tmdb",
       "id": "207"
@@ -144,7 +144,7 @@
     "tags": [
       "Sci-fi"
     ],
-    "cover": "covers/movie-0001.jpg",
+    "cover": "covers/movie/movie-0001.jpg",
     "source": {
       "provider": "tmdb",
       "id": "1930"

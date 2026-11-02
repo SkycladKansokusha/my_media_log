@@ -76,6 +76,13 @@ def data_file(category: str) -> Path:
     return DATA_DIR / f"{category}.json"
 
 
+def cover_dir(category: str) -> Path:
+    """covers/<category>/ — created if missing."""
+    path = COVERS_DIR / category
+    path.mkdir(parents=True, exist_ok=True)
+    return path
+
+
 def load_entries(category: str) -> list:
     path = data_file(category)
     if not path.exists():
