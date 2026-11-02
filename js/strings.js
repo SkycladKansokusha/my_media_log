@@ -42,7 +42,7 @@ export const STRINGS = {
     tv: 'TV SERIES',
     anime: 'ANIME',
     manga: 'MANGA',
-    literature: 'LITERATURE',
+    literature: 'FICTION',
     music: 'ALBUMS',
   },
 
@@ -52,7 +52,7 @@ export const STRINGS = {
     tv: 'TV',
     anime: 'ANI',
     manga: 'MNG',
-    literature: 'LIT',
+    literature: 'FIC',
     music: 'MUS',
   },
 
