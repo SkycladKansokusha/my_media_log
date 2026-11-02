@@ -1,5 +1,49 @@
 [
   {
+    "id": "tv-0018",
+    "title": "Kamen Rider Amazons",
+    "originalTitle": "仮面ライダーアマゾンズ",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "假面骑士亚马逊"
+    ],
+    "creator": "Hidenori Ishida",
+    "creatorOriginal": "石田秀範",
+    "year": 2016,
+    "date": "2026-11-02",
+    "rating": 4,
+    "tags": [
+      "Sci-fi"
+    ],
+    "cover": "covers/tv/tv-0018.jpg",
+    "source": {
+      "provider": "tmdb",
+      "id": "100659"
+    }
+  },
+  {
+    "id": "tv-0017",
+    "title": "The Flash",
+    "originalTitle": "The Flash",
+    "originalLanguage": "en",
+    "altTitles": [
+      "闪电侠"
+    ],
+    "creator": "Geoff Johns, Greg Berlanti",
+    "year": 2014,
+    "date": "2026-11-02",
+    "rating": 3.5,
+    "review": "Talk-man.",
+    "tags": [
+      "Sci-fi"
+    ],
+    "cover": "covers/tv/tv-0017.jpg",
+    "source": {
+      "provider": "tmdb",
+      "id": "60735"
+    }
+  },
+  {
     "id": "tv-0016",
     "title": "Sherlock",
     "originalTitle": "Sherlock",
