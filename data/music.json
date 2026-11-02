@@ -1,5 +1,35 @@
 [
   {
+    "id": "music-0016",
+    "title": "Quiet Emotion",
+    "originalTitle": "Quiet Emotion",
+    "originalLanguage": "ja",
+    "creator": "Naoko Gushima",
+    "creatorOriginal": "具島直子",
+    "year": 1997,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "City Pop"
+    ],
+    "cover": "covers/music/music-0016.jpg"
+  },
+  {
+    "id": "music-0015",
+    "title": "miss. G",
+    "originalTitle": "miss. G",
+    "originalLanguage": "ja",
+    "creator": "Naoko Gushima",
+    "creatorOriginal": "具島直子",
+    "year": 1996,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "City Pop"
+    ],
+    "cover": "covers/music/music-0015.jpg"
+  },
+  {
     "id": "music-0014",
     "title": "Merry Christmas, Mr. Lawrence",
     "creator": "Ryuichi Sakamoto",
