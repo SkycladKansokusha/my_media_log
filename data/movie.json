@@ -1,5 +1,131 @@
 [
   {
+    "id": "movie-0013",
+    "title": "Hacksaw Ridge",
+    "originalTitle": "Hacksaw Ridge",
+    "originalLanguage": "en",
+    "altTitles": [
+      "血战钢锯岭"
+    ],
+    "creator": "Mel Gibson",
+    "year": 2016,
+    "date": "2026-11-02",
+    "rating": 4.5,
+    "tags": [
+      "War"
+    ],
+    "cover": "covers/movie/movie-0013.jpg",
+    "source": {
+      "provider": "tmdb",
+      "id": "324786"
+    }
+  },
+  {
+    "id": "movie-0012",
+    "title": "All Quiet on the Western Front",
+    "originalTitle": "Im Westen nichts Neues",
+    "originalLanguage": "de",
+    "altTitles": [
+      "西线无战事"
+    ],
+    "creator": "Edward Berger",
+    "year": 2022,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "War"
+    ],
+    "cover": "covers/movie/movie-0012.jpg",
+    "source": {
+      "provider": "tmdb",
+      "id": "49046"
+    }
+  },
+  {
+    "id": "movie-0011",
+    "title": "Merry Christmas, Mr. Lawrence",
+    "originalTitle": "戦場のメリークリスマス",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "战场上的快乐圣诞"
+    ],
+    "creator": "Nagisa Ōshima",
+    "year": 1983,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "War"
+    ],
+    "cover": "covers/movie/movie-0011.jpg",
+    "source": {
+      "provider": "tmdb",
+      "id": "11948"
+    }
+  },
+  {
+    "id": "movie-0010",
+    "title": "Joint Security Area",
+    "originalTitle": "공동경비구역 JSA",
+    "originalLanguage": "ko",
+    "altTitles": [
+      "共同警备区"
+    ],
+    "creator": "Park Chan-wook",
+    "year": 2000,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Thriller"
+    ],
+    "cover": "covers/movie/movie-0010.jpg",
+    "source": {
+      "provider": "tmdb",
+      "id": "2440"
+    }
+  },
+  {
+    "id": "movie-0009",
+    "title": "Silenced",
+    "originalTitle": "도가니",
+    "originalLanguage": "ko",
+    "altTitles": [
+      "熔炉"
+    ],
+    "creator": "Hwang Dong-hyuk",
+    "year": 2011,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Thriller"
+    ],
+    "cover": "covers/movie/movie-0009.jpg",
+    "source": {
+      "provider": "tmdb",
+      "id": "81481"
+    }
+  },
+  {
+    "id": "movie-0008",
+    "title": "The Attorney",
+    "originalTitle": "변호인",
+    "originalLanguage": "ko",
+    "altTitles": [
+      "辩护人"
+    ],
+    "creator": "Yang Woo-seok",
+    "year": 2013,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Thriller"
+    ],
+    "cover": "covers/movie/movie-0008.jpg",
+    "source": {
+      "provider": "tmdb",
+      "id": "242452"
+    }
+  },
+  {
     "id": "movie-0007",
     "title": "We Made a Beautiful Bouquet",
     "originalTitle": "花束みたいな恋をした",
