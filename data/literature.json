@@ -1,5 +1,49 @@
 [
   {
+    "id": "literature-0007",
+    "title": "First Love",
+    "originalTitle": "Первая любовь",
+    "originalLanguage": "ru",
+    "creator": "Ivan Turgenev",
+    "year": 1984,
+    "date": "2026-11-02",
+    "rating": 4.5,
+    "cover": "covers/literature/literature-0007.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL28645904W"
+    }
+  },
+  {
+    "id": "literature-0006",
+    "title": "White Nights",
+    "originalTitle": "Белые ночи",
+    "originalLanguage": "ru",
+    "creator": "Fyodor Dostoevsky",
+    "year": 1848,
+    "date": "2026-11-02",
+    "rating": 5,
+    "cover": "covers/literature/literature-0006.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL166952W"
+    }
+  },
+  {
+    "id": "literature-0005",
+    "title": "The Catcher in the Rye",
+    "originalLanguage": "en",
+    "creator": "J. D. Salinger",
+    "year": 1945,
+    "date": "2026-11-02",
+    "rating": 5,
+    "cover": "covers/literature/literature-0005.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL3335245W"
+    }
+  },
+  {
     "id": "literature-0004",
     "title": "Frog",
     "originalTitle": "蛙",
