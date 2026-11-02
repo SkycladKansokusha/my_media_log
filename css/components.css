@@ -931,6 +931,10 @@
   clip-path: var(--shape-cut);
 }
 
+/* close button wrapper: no box on desktop, sticky bar on phones */
+.detail__topbar {
+  display: contents;
+}
 .detail__close {
   position: absolute;
   right: clamp(16px, 2.4vw, 32px);
@@ -1142,13 +1146,57 @@
 
 @media (max-width: 760px) {
   .detail {
+    height: 100vh;
+    height: 100dvh;
     padding: 0;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* [open] needed: the base .detail[open] rule centers the panel, which pushes
+     its top (and the close button) into unscrollable negative overflow. */
+  .detail[open] {
     place-items: start stretch;
   }
   .detail__panel {
     --cut: 0px;
     min-height: 100%;
-    padding: 64px var(--s-5) var(--s-7);
+    padding: 0 var(--s-5) calc(var(--s-7) + env(safe-area-inset-bottom));
+  }
+  /* sticky bar inside the scrolling dialog: CLOSE never scrolls away or hides under the notch */
+  .detail__topbar {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 calc(-1 * var(--s-5)) var(--s-3);
+    padding: max(var(--s-2), env(safe-area-inset-top)) max(var(--s-3), env(safe-area-inset-right)) 0 0;
+    background: var(--c-bg-raised);
+    border-bottom: 1px solid var(--c-line);
+  }
+  @supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+    .detail__topbar {
+      background: color-mix(in srgb, var(--c-bg-raised) 82%, transparent);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+    }
+  }
+  /* fade in/out together with the panel background */
+  .detail__topbar {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease-out-expo);
+  }
+  .detail.is-open .detail__topbar {
+    opacity: 1;
+  }
+  .detail.is-closing .detail__topbar {
+    transition: opacity 120ms var(--ease-in);
+  }
+  .detail__close {
+    position: static;
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: flex-end;
+    padding: 0 var(--s-1);
   }
   .detail__grid,
   .detail[data-aspect="portrait"] .detail__grid {

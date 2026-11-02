@@ -32,11 +32,16 @@ export function initDetail() {
   panel = h(
     'div',
     { class: 'detail__panel' },
+    // Wrapper only matters on phones (sticky bar); on desktop it is display: contents.
     h(
-      'button',
-      { class: 'detail__close', type: 'button', 'aria-label': STRINGS.detail.closeAria, onclick: () => closeDetail() },
-      h('span', { class: 'detail__close-x', 'aria-hidden': 'true' }),
-      h('span', { class: 'detail__close-text' }, STRINGS.detail.close),
+      'div',
+      { class: 'detail__topbar' },
+      h(
+        'button',
+        { class: 'detail__close', type: 'button', 'aria-label': STRINGS.detail.closeAria, onclick: () => closeDetail() },
+        h('span', { class: 'detail__close-x', 'aria-hidden': 'true' }),
+        h('span', { class: 'detail__close-text' }, STRINGS.detail.close),
+      ),
     ),
     h('div', { class: 'detail__grid' }, h('div', { class: 'detail__cover-col' }, coverEl), body),
   );
