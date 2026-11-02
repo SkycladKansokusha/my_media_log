@@ -15,7 +15,7 @@ import { STRINGS, t } from './strings.js';
 import { MOTION } from './config.js';
 import { Spring, prefersReducedMotion } from './motion.js';
 import { h, coverArt, ratingDiamonds, formatDate, formatRating, titleBlock } from './render.js';
-import { displayCreator, guessLang } from './store.js';
+import { displayCreator, guessLang, sameTitle } from './store.js';
 
 let dialog, backdrop, panel, coverEl, body;
 let sourceCard = null;
@@ -89,30 +89,47 @@ function field(label, ...content) {
 
 function buildBody(entry, { mode, categoryLabel, onTag }) {
   const creator = displayCreator(entry);
-  const showOriginalField = entry.originalTitle && entry.originalTitle !== entry.title;
+  const showOriginalField = Boolean(entry.originalTitle) && !sameTitle(entry.originalTitle, entry.title);
+  const hasYear = entry.year != null && entry.year !== '';
 
-  const fields = [
-    showOriginalField && field(STRINGS.detail.originalTitle, h('span', { lang: entry.originalLanguage || guessLang(entry.originalTitle) || null }, entry.originalTitle)),
-    entry.altTitles.length &&
-      field(STRINGS.detail.alsoKnownAs, h('ul', { class: 'detail__aka' }, entry.altTitles.map((alt) => h('li', { lang: guessLang(alt) || null }, alt)))),
-    creator.primary &&
-      field(
-        STRINGS.detail.creator[entry._category],
-        h('span', {}, creator.primary),
-        creator.secondary && h('span', { class: 'detail__muted', lang: creator.secondaryLang || null }, creator.secondary),
-      ),
-    entry.year && field(STRINGS.detail.year, h('span', { class: 'mono' }, entry.year)),
-    field(STRINGS.detail.date, h('span', { class: 'mono' }, formatDate(entry.date))),
-    entry.tags.length &&
-      field(
-        STRINGS.detail.tags,
-        h(
-          'ul',
-          { class: 'detail__tags' },
-          entry.tags.map((tag) => h('li', {}, h('button', { class: 'chip', type: 'button', lang: guessLang(tag) || null, onclick: () => onTag(tag) }, tag))),
-        ),
-      ),
-  ];
+  // Three fixed rows, two columns each. A missing cell is null and gets filtered out,
+  // so the remaining cell moves left within its own row and an empty row disappears.
+  const rows = [
+    [
+      showOriginalField
+        ? field(STRINGS.detail.originalTitle, h('span', { lang: entry.originalLanguage || guessLang(entry.originalTitle) || null }, entry.originalTitle))
+        : null,
+      entry.altTitles?.length > 0
+        ? field(STRINGS.detail.alsoKnownAs, h('ul', { class: 'detail__aka' }, entry.altTitles.map((alt) => h('li', { lang: guessLang(alt) || null }, alt))))
+        : null,
+    ],
+    [
+      creator.primary
+        ? field(
+            STRINGS.detail.creator[entry._category],
+            h('span', {}, creator.primary),
+            creator.secondary ? h('span', { class: 'detail__muted', lang: creator.secondaryLang || null }, creator.secondary) : null,
+          )
+        : null,
+      hasYear ? field(STRINGS.detail.year, h('span', { class: 'mono' }, entry.year)) : null,
+    ],
+    [
+      entry.date ? field(STRINGS.detail.date, h('span', { class: 'mono' }, formatDate(entry.date))) : null,
+      entry.tags?.length > 0
+        ? field(
+            STRINGS.detail.tags,
+            h(
+              'ul',
+              { class: 'detail__tags' },
+              entry.tags.map((tag) => h('li', {}, h('button', { class: 'chip', type: 'button', lang: guessLang(tag) || null, onclick: () => onTag(tag) }, tag))),
+            ),
+          )
+        : null,
+    ],
+  ]
+    .map((cells) => cells.filter(Boolean))
+    .filter((cells) => cells.length > 0)
+    .map((cells) => h('dl', { class: 'detail__row' }, cells));
 
   return [
     h('p', { class: 'detail__file label' }, `${t(STRINGS.detail.file, { n: entry._fileNo })}  //  ${categoryLabel}`),
@@ -133,7 +150,7 @@ function buildBody(entry, { mode, categoryLabel, onTag }) {
         ? h('p', { class: 'detail__review-text', lang: guessLang(entry.review) || null }, entry.review)
         : h('p', { class: 'detail__muted' }, STRINGS.detail.noReview),
     ),
-    h('dl', { class: 'detail__fields' }, fields),
+    rows.length > 0 ? h('div', { class: 'detail__fields' }, rows) : null,
   ];
 }
 
