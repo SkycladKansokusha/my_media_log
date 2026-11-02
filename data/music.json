@@ -1,5 +1,42 @@
 [
   {
+    "id": "music-0007",
+    "title": "kikUUiki",
+    "originalLanguage": "ja",
+    "creator": "Sakanaction",
+    "creatorOriginal": "サカナクション",
+    "year": 2010,
+    "date": "2026-11-02",
+    "rating": 5,
+    "tags": [
+      "Japanese"
+    ],
+    "cover": "covers/music-0007.jpg",
+    "source": {
+      "provider": "itunes",
+      "id": "358082162"
+    }
+  },
+  {
+    "id": "music-0006",
+    "title": "834.194",
+    "originalLanguage": "ja",
+    "creator": "Sakanaction",
+    "creatorOriginal": "サカナクション",
+    "year": 2019,
+    "date": "2026-11-02",
+    "rating": 5,
+    "review": "The distance between Sapporo and Tokyo.",
+    "tags": [
+      "Japanese"
+    ],
+    "cover": "covers/music-0006.jpg",
+    "source": {
+      "provider": "itunes",
+      "id": "1465208767"
+    }
+  },
+  {
     "id": "music-0005",
     "title": "Go to the Future",
     "originalTitle": "GO TO THE FUTURE",
