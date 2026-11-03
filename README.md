@@ -2,7 +2,6 @@
 
 纯静态网站（HTML + CSS + 原生 JS 模块），数据存放在 `data/*.json`，封面按分类存放在 `covers/<分类>/`。
 不需要构建步骤，也没有运行时依赖；可以直接部署到 GitHub Pages。
-网站：<https://skycladkansokusha.github.io/my_media_log>
 
 ```
 my-media-log/
