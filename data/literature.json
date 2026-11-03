@@ -1,5 +1,112 @@
 [
   {
+    "id": "literature-0012",
+    "title": "The Mimosa Confessions",
+    "originalTitle": "ミモザの告白",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "Mimoza no Kokuhaku"
+    ],
+    "creator": "Mei Hachimoku ",
+    "creatorOriginal": "八目迷",
+    "year": 2021,
+    "date": "2026-11-03",
+    "rating": 4,
+    "tags": [
+      "light novel"
+    ],
+    "cover": "covers/literature/literature-0012.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "137428"
+    }
+  },
+  {
+    "id": "literature-0011",
+    "title": "An Autumn in Amber, a Zero-Second Journey",
+    "originalTitle": "琥珀の秋、0秒の旅",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "Kohaku no Aki, 0 Byou no Tabi"
+    ],
+    "creator": "Mei Hachimoku ",
+    "creatorOriginal": "八目迷",
+    "year": 2022,
+    "date": "2026-11-03",
+    "rating": 3.5,
+    "tags": [
+      "light novel"
+    ],
+    "cover": "covers/literature/literature-0011.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "152715"
+    }
+  },
+  {
+    "id": "literature-0010",
+    "title": "Wait For Me Yesterday in Spring",
+    "originalTitle": "きのうの春で、君を待つ",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "Kinou no Haru de, Kimi wo Matsu"
+    ],
+    "creator": "Mei Hachimoku ",
+    "creatorOriginal": "八目迷",
+    "year": 2020,
+    "date": "2026-11-03",
+    "rating": 3.5,
+    "tags": [
+      "light novel"
+    ],
+    "cover": "covers/literature/literature-0010.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "140287"
+    }
+  },
+  {
+    "id": "literature-0009",
+    "title": "Starting Over",
+    "originalTitle": "スターティング・オーヴァー",
+    "originalLanguage": "ja",
+    "creator": "Sugaru Miaki",
+    "creatorOriginal": "三秋縋",
+    "year": 2013,
+    "date": "2026-11-03",
+    "rating": 4,
+    "tags": [
+      "light novel"
+    ],
+    "cover": "covers/literature/literature-0009.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "99970"
+    }
+  },
+  {
+    "id": "literature-0008",
+    "title": "The Tunnel to Summer, the Exit of Goodbyes",
+    "originalTitle": "夏へのトンネル、さよならの出口",
+    "originalLanguage": "ja",
+    "altTitles": [
+      "Natsu e no Tunnel, Sayonara no Deguchi"
+    ],
+    "creator": "Mei Hachimoku ",
+    "creatorOriginal": "八目迷",
+    "year": 2019,
+    "date": "2026-11-03",
+    "rating": 4,
+    "tags": [
+      "light novel"
+    ],
+    "cover": "covers/literature/literature-0008.jpg",
+    "source": {
+      "provider": "anilist",
+      "id": "117853"
+    }
+  },
+  {
     "id": "literature-0007",
     "title": "First Love",
     "originalTitle": "Первая любовь",
