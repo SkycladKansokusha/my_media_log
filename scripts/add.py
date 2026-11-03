@@ -285,24 +285,37 @@ COUNTRY_TO_LANG = {"JP": "ja", "KR": "ko", "CN": "zh", "TW": "zh-Hant", "HK": "z
 
 
 def pick_staff(edges: list, kind: str):
-    """Director for anime; author (Story/Art/Original Creator) for manga."""
-    wanted = ["Director"] if kind == "ANIME" else ["Story & Art", "Story", "Original Creator", "Original Story", "Art"]
+    """Director for anime; author (Story/Art/Original Creator) for manga.
+    kind "NOVEL": the writer only — never the illustrator, so no fallback to the first staff member."""
+    if kind == "NOVEL":
+        wanted = ["Story", "Original Creator", "Original Story", "Story & Art"]
+    else:
+        wanted = ["Director"] if kind == "ANIME" else ["Story & Art", "Story", "Original Creator", "Original Story", "Art"]
     for role in wanted:
         for e in edges:
             if (e.get("role") or "").split(" (")[0] == role:
                 return e["node"]["name"]
+    if kind == "NOVEL":
+        return None
     return edges[0]["node"]["name"] if edges else None
 
 
-def anilist_search(kind: str, query: str) -> list[dict]:
-    payload = {"query": ANILIST_QUERY, "variables": {"search": query, "type": kind, "perPage": MAX_RESULTS}}
+def anilist_search(kind: str, query: str, fmt: str | None = None) -> list[dict]:
+    """fmt: optional MediaFormat filter (e.g. "NOVEL"); without it the query is unchanged."""
+    gql = ANILIST_QUERY
+    variables = {"search": query, "type": kind, "perPage": MAX_RESULTS}
+    if fmt:
+        gql = gql.replace("$perPage: Int)", "$perPage: Int, $format: MediaFormat)", 1)
+        gql = gql.replace("type: $type,", "type: $type, format: $format,", 1)
+        variables["format"] = fmt
+    payload = {"query": gql, "variables": variables}
     data = http_post_json(ANILIST_API, payload).json()
     if data.get("errors"):
         raise ConnectionError(f"AniList error: {data['errors'][0].get('message')}")
     results = []
     for m in data["data"]["Page"]["media"]:
         t = m.get("title") or {}
-        name = pick_staff((m.get("staff") or {}).get("edges") or [], kind) or {}
+        name = pick_staff((m.get("staff") or {}).get("edges") or [], "NOVEL" if fmt == "NOVEL" else kind) or {}
         studios = [s["name"] for s in (m.get("studios") or {}).get("nodes", [])]
         creator = name.get("full") or ""
         if kind == "ANIME" and not creator and studios:
@@ -444,8 +457,31 @@ def search(category: str, query: str) -> list[dict]:
     if category == "manga":
         return anilist_search("MANGA", query)
     if category == "literature":
-        return books_search(query)
+        return literature_search(query)
     return itunes_search(query)
+
+
+def literature_search(query: str) -> list[dict]:
+    """Light novels from AniList first; fill up with Open Library / Google Books when it finds little."""
+    results: list[dict] = []
+    try:
+        results = anilist_search("MANGA", query, fmt="NOVEL")
+    except ConnectionError as e:
+        print(C.dim(f"  AniList unavailable ({e}); trying book sources …"))
+    if len(results) < 3:
+        try:
+            books = books_search(query)
+        except ConnectionError as e:
+            if not results:
+                raise e
+            books = []
+        seen = {norm(r["title"] or r["originalTitle"]) for r in results}
+        for b in books:
+            key = norm(b["title"] or b["originalTitle"])
+            if key not in seen:
+                seen.add(key)
+                results.append(b)
+    return results[:MAX_RESULTS]
 
 
 def details(category: str, item: dict) -> dict:
@@ -654,7 +690,8 @@ def run(category: str | None, manual: bool) -> int:
     print()
     rating = ask_rating()
     review = ask_review()
-    tags = ask_list("Tags", [], ",")
+    is_light_novel = category == "literature" and (item.get("source") or {}).get("provider") == "anilist" and item.get("_extra") == "NOVEL"
+    tags = ask_list("Tags", ["light novel"] if is_light_novel else [], ",")
     date = ask_date()
 
     entry = {
