@@ -1,5 +1,181 @@
 [
   {
+    "id": "literature-0022",
+    "title": "Malice",
+    "originalTitle": "悪意",
+    "originalLanguage": "ja",
+    "creator": "Keigo Higashino",
+    "creatorOriginal": "東野圭吾",
+    "year": 2014,
+    "date": "2026-11-03",
+    "rating": 5,
+    "tags": [
+      "Mystery"
+    ],
+    "cover": "covers/literature/literature-0022.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL20339731W"
+    }
+  },
+  {
+    "id": "literature-0021",
+    "title": "The devotion of suspect X",
+    "originalTitle": "容疑者Xの献身",
+    "originalLanguage": "ja",
+    "creator": "Keigo Higashino",
+    "creatorOriginal": "東野圭吾",
+    "year": 2011,
+    "date": "2026-11-03",
+    "rating": 5,
+    "tags": [
+      "Mystery"
+    ],
+    "cover": "covers/literature/literature-0021.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL15637392W"
+    }
+  },
+  {
+    "id": "literature-0020",
+    "title": "Journey Under the Midnight Sun",
+    "originalTitle": "白夜行",
+    "originalLanguage": "ja",
+    "creator": "Keigo Higashino",
+    "creatorOriginal": "東野圭吾",
+    "year": 2014,
+    "date": "2026-11-03",
+    "rating": 4.5,
+    "tags": [
+      "Mystery"
+    ],
+    "cover": "covers/literature/literature-0020.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL17395780W"
+    }
+  },
+  {
+    "id": "literature-0019",
+    "title": "A Murder Is Announced",
+    "originalLanguage": "en",
+    "creator": "Agatha Christie",
+    "year": 1950,
+    "date": "2026-11-03",
+    "rating": 4.5,
+    "tags": [
+      "Mystery"
+    ],
+    "cover": "covers/literature/literature-0019.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL471771W"
+    }
+  },
+  {
+    "id": "literature-0018",
+    "title": "The Body in the Library",
+    "originalLanguage": "en",
+    "creator": "Agatha Christie",
+    "year": 1942,
+    "date": "2026-11-03",
+    "rating": 4.5,
+    "tags": [
+      "Mystery"
+    ],
+    "cover": "covers/literature/literature-0018.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL471610W"
+    }
+  },
+  {
+    "id": "literature-0017",
+    "title": "The Murder at the Vicarage",
+    "originalLanguage": "en",
+    "creator": "Agatha Christie",
+    "year": 1930,
+    "date": "2026-11-03",
+    "rating": 4.5,
+    "tags": [
+      "Mystery"
+    ],
+    "cover": "covers/literature/literature-0017.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL471895W"
+    }
+  },
+  {
+    "id": "literature-0016",
+    "title": "Death on the Nile",
+    "originalLanguage": "en",
+    "creator": "Agatha Christie",
+    "year": 1937,
+    "date": "2026-11-03",
+    "rating": 4.5,
+    "tags": [
+      "Mystery"
+    ],
+    "cover": "covers/literature/literature-0016.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL471724W"
+    }
+  },
+  {
+    "id": "literature-0015",
+    "title": "The Murder of Roger Ackroyd",
+    "originalLanguage": "en",
+    "creator": "Agatha Christie",
+    "year": 1926,
+    "date": "2026-11-03",
+    "rating": 5,
+    "tags": [
+      "Detective"
+    ],
+    "cover": "covers/literature/literature-0015.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL471932W"
+    }
+  },
+  {
+    "id": "literature-0014",
+    "title": "Murder on the Orient Express",
+    "originalLanguage": "en",
+    "creator": "Agatha Christie",
+    "year": 1933,
+    "date": "2026-11-03",
+    "rating": 5,
+    "tags": [
+      "Mystery"
+    ],
+    "cover": "covers/literature/literature-0014.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL471576W"
+    }
+  },
+  {
+    "id": "literature-0013",
+    "title": "And Then There Were None",
+    "originalLanguage": "en",
+    "creator": "Agatha Christie",
+    "year": 1939,
+    "date": "2026-11-03",
+    "rating": 5,
+    "tags": [
+      "Mystery"
+    ],
+    "cover": "covers/literature/literature-0013.jpg",
+    "source": {
+      "provider": "openlibrary",
+      "id": "OL471565W"
+    }
+  },
+  {
     "id": "literature-0012",
     "title": "The Mimosa Confessions",
     "originalTitle": "ミモザの告白",
