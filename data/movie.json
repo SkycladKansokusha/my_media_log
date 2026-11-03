@@ -1,5 +1,26 @@
 [
   {
+    "id": "movie-0036",
+    "title": "In the Mood for Love",
+    "originalTitle": "花樣年華",
+    "originalLanguage": "cn",
+    "altTitles": [
+      "花样年华"
+    ],
+    "creator": "Wong Kar-wai",
+    "year": 2000,
+    "date": "2026-11-03",
+    "rating": 5,
+    "tags": [
+      "Romance"
+    ],
+    "cover": "covers/movie/movie-0036.jpg",
+    "source": {
+      "provider": "tmdb",
+      "id": "843"
+    }
+  },
+  {
     "id": "movie-0035",
     "title": "Spider-Man: Across the Spider-Verse",
     "originalTitle": "Spider-Man: Across the Spider-Verse",
